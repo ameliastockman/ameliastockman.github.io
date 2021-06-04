@@ -707,6 +707,23 @@ img {
 	z-index:15;
 }
 
+.imageWindowOb1 {
+	width:36%;
+	position:absolute;
+	top:20%;
+	left:10%;
+	border: 1.4px solid whitesmoke;
+}
+
+.imageWindowOb2 {
+	width:36%;
+	position:absolute;
+	top:50%;
+	left:10%;
+}
+
+
+
 
 
 /* CONTAINER DIVS */
