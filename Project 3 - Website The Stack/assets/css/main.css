@@ -1,0 +1,864 @@
+body {
+	font-family:monospace;
+	font-size:11px;
+	color:whitesmoke;
+	background-color:black;
+}
+
+@font-face {
+    font-family:'HelveticaMonospacedW06-Rg';
+    src:url('HelveticaMonospacedW06-Rg.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+::-webkit-scrollbar {
+	-webkit-appearance:none;
+	width:5px;
+	height:5px; 
+}
+
+  ::-webkit-scrollbar-thumb {
+	border-radius:0px;
+	background-color:whitesmoke;
+}
+
+img {
+	width:100%;
+}
+
+
+
+
+.stack {
+	width: 40%;
+	height:6000px;
+	z-index: 40;
+}
+
+.stackObjects {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5%); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FIRST IMAGES */
+
+
+.titleFirst {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	line-height: 114%;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:5%;
+	left:2%;
+	z-index:15;
+}
+
+.imageEarth {
+	width:40%;
+	position:absolute;
+	top:10%;
+	right:7%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.block1 {
+	width:42%;
+	height:40vh;
+	overflow: scroll;
+	overflow-x: hidden;
+	position:absolute;
+	top:20%;
+	left:4%;
+	z-index:8;
+	background-color: black;
+	padding: 2vw;
+	font-family:Helvetica;
+	font-size:1.6vw;
+	font-weight:600;
+	line-height: 110%;
+	border: 1.4px solid whitesmoke;
+	color:whitesmoke;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* APOLLO IMAGES */
+
+.titleApollo {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:6%;
+	left:2%;
+	z-index:15;
+}
+
+.imageApolloBig {
+	width:38%;
+	position:absolute;
+	top:6%;
+	right:4%;
+	z-index:2;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageApolloBig:active {
+	cursor:grabbing;
+}
+
+.imageMoon {
+	width:18%;
+	position:absolute;
+	top:21%;
+	right:33%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageMoon:active {
+	cursor:grabbing;
+}
+
+.imageLunarVehicle {
+	width:16.5%;
+	position:absolute;
+	top:-5%;
+	right:54.5%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageLunarVehicle:active {
+	cursor:grabbing;
+}
+
+.imageAstro {
+	width:8%;
+	position:absolute;
+	top:31.4%;
+	left:29%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageAstro:active {
+	cursor:grabbing;
+}
+
+.imageLanding {
+	width:42%;
+	position:absolute;
+	top:20%;
+	left:5%;
+	z-index:-1;
+}
+
+.imageFootprint {
+	width:28%;
+	position:absolute;
+	top:60%;
+	right:8.5%;
+	z-index:-1;
+}
+
+.imageApolloCircle {
+	width:18%;
+	position:absolute;
+	top:77.5%;
+	right:78%;
+	z-index:3;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageApolloCircle:active {
+	cursor:grabbing;
+}
+
+.imageMini {
+	width:20%;
+	position:absolute;
+	top:57.5%;
+	right:24.5%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageMini:active {
+	cursor:grabbing;
+}
+
+.imageRecordOne {
+	width:12%;
+	position:absolute;
+	top:0%;
+	right:10%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordOne:active {
+	cursor:grabbing;
+}
+
+.imageRecordTwo {
+	width:50%;
+	position:absolute;
+	top:-4.5%;
+	left:0%;
+	z-index:-1;
+}
+
+.imageRecordThree {
+	width:20%;
+	position:absolute;
+	top:76%;
+	right:54%;
+	z-index:10;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordThree:active {
+	cursor:grabbing;
+}
+
+.imageRecordFour {
+	width:22%;
+	position:absolute;
+	top:33%;
+	right:13%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordFour:active {
+	cursor:grabbing;
+}
+
+.imageRecordFive {
+	width:30%;
+	position:absolute;
+	bottom:25%;
+	left:5%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordFive:active {
+	cursor:grabbing;
+}
+
+.imageRecordSix {
+	width:20%;
+	position:absolute;
+	top:12%;
+	right:24.5%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordSix:active {
+	cursor:grabbing;
+}
+
+.imageRecordSeven {
+	width:14%;
+	position:absolute;
+	top:65%;
+	right:5%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageRecordSeven:active {
+	cursor:grabbing;
+}
+
+.moonObjects {
+	width:100%;
+	position:absolute;
+	top:10%;
+	left:0%;
+	z-index:3;
+}
+
+.moonCircle {
+	fill:black;
+	fill-opacity:0;
+	stroke:whitesmoke;
+	stroke-width:1.3551;
+	stroke-miterlimit:10;
+}
+
+.moonCircle:hover {
+	fill:whitesmoke;
+	fill-opacity:1;
+	stroke:whitesmoke;
+	stroke-width:8;
+	stroke-miterlimit:10;
+}
+
+/* ISS IMAGES */
+
+.titleIss {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:6%;
+	left:2%;
+	z-index:15;
+}
+
+.imageIssTrans {
+	width:30%;
+	position:absolute;
+	top:-3%;
+	right:28%;
+	z-index:10;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageIssTrans:active {
+	cursor:grabbing;
+}
+
+.imageIssLong {
+	width:18%;
+	position:absolute;
+	top:20%;
+	left:30%;
+	z-index:3;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageIssLong:active {
+	cursor:grabbing;
+}
+
+.imageIssCircle {
+	width:18%;
+	position:absolute;
+	top:8%;
+	right:4%;
+	z-index:3;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageIssCircle:active {
+	cursor:grabbing;
+}
+
+.imageIssTriangle {
+	width:18%;
+	position:absolute;
+	bottom:0%;
+	left:4%;
+	z-index:3;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageIssTriangle:active {
+	cursor:grabbing;
+}
+
+.imageIssStars {
+	width:99%;
+	position:absolute;
+	top:-1.5%;
+	right:0.5%;
+	z-index:-1;
+}
+
+.imageIssEarth {
+	width:38%;
+	position:absolute;
+	top:30%;
+	left:5%;
+	z-index:-2;
+}
+
+.issVideoWindow {
+	width:38%;
+	height:28%;
+	position:absolute;
+	bottom:-5%;
+	right:10%;
+	z-index:1;
+	background-color:black;
+	border:1.4px solid whitesmoke;
+}
+
+.issTrackerWindow {
+	width:24%;
+	height:40%;
+	position:absolute;
+	top:30%;
+	right:15%;
+	z-index:1;
+	background-color:black;
+	border:1.4px solid whitesmoke;
+}
+
+
+
+/* GNSS IMAGES */
+
+.titleGnss {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:6%;
+	left:2%;
+	z-index:15;
+}
+
+.imageGnssEarth {
+	width:45%;
+	position:absolute;
+	top:20%;
+	right:17%;
+	z-index:-1;
+}
+
+.gnssMapWindow {
+	width:38%;
+	height:28%;
+	position:absolute;
+	bottom:0%;
+	right:10%;
+	z-index:9;
+	background-color:whitesmoke;
+	border:1.4px solid whitesmoke;
+}
+
+.imageGnssCircle {
+	width:18%;
+	position:absolute;
+	top:82%;
+	right:78%;
+	z-index:4;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageGnssCircle:active {
+	cursor:grabbing;
+}
+
+.imageGnssSquare1 {
+	width:18%;
+	position:absolute;
+	top:14%;
+	right:4%;
+	z-index:3;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageGnssSquare1:active {
+	cursor:grabbing;
+}
+
+.imageGnssSquare2 {
+	width:18%;
+	position:absolute;
+	top:37%;
+	right:4%;
+	z-index:3;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageGnssSquare2:active {
+	cursor:grabbing;
+}
+
+.imageGnssIphone {
+	width:34%;
+	position:absolute;
+	bottom:4%;
+	left:10%;
+	z-index:3;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageGnssIphone:active {
+	cursor:grabbing;
+}
+
+
+
+/* OBSERVATION IMAGES */
+
+.titleObservation {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:6%;
+	left:2%;
+	z-index:15;
+}
+
+.imageObSverdrup {
+	width:38%;
+	position:absolute;
+	bottom:-5%;
+	right:10%;
+	z-index:1;
+}
+
+.imageEarthEclipse {
+	width:18%;
+	position:absolute;
+	top:5%;
+	right:33%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageObBlue {
+	width:18%;
+	position:absolute;
+	top:28%;
+	right:78%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageObYellow {
+	width:18%;
+	position:absolute;
+	top:51%;
+	right:78%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageObRed {
+	width:18%;
+	position:absolute;
+	top:74%;
+	right:4.5%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageObCircle {
+	width:18%;
+	position:absolute;
+	top:97%;
+	right:4.5%;
+	z-index:9;
+	border-radius:50%;
+	overflow:hidden;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageObBig {
+	width:38%;
+	position:absolute;
+	top:9.5%;
+	right:4%;
+	z-index:2;
+	cursor:move;
+	cursor:grab;
+}
+
+
+.imageLandsat {
+	width:36%;
+	position:absolute;
+	bottom:-12%;
+	right:14%;
+	z-index:-1;
+	cursor:move;
+	cursor:grab;
+}
+
+
+.obVideoWindow {
+	width:36%;
+	height:26%;
+	position:absolute;
+	bottom:-2%;
+	left:6%;
+	z-index:1;
+	background-color:black;
+	border:1.4px solid whitesmoke;
+}
+
+
+
+
+
+
+
+/* CURRENT IMAGES */
+
+.titleCurrent {
+	font-family:Helvetica;
+	font-size:5vw;
+	font-weight:600;
+	color:whitesmoke;
+	text-shadow:0 0 3px black;
+	width:38%;
+	position:absolute;
+	top:6%;
+	left:2%;
+	z-index:15;
+}
+
+
+
+/* CONTAINER DIVS */
+
+.containerFirst {
+	width:100%;
+	position:relative;
+}
+
+.containerApollo {
+	width:100%;
+	position:relative;
+}
+
+.containerIss {
+	width:100%;
+	position:relative;
+}
+
+.containerGnss {
+	width:100%;
+	position:relative;
+}
+
+.containerObservation {
+	width:100%;
+	position:relative;
+}
+
+.containerCurrent {
+	width:100%;
+	position:relative;
+}
+
+
+
+/* DATA DIVS */
+
+.dataFirst {
+	  width:100%;	
+  }
+
+.dataApollo {
+	width:100%;
+}
+
+.dataIss {
+	width:100%;
+}
+
+.dataGnss {
+	width:100%;
+}
+
+.dataObservation {
+	width:100%;
+}
+
+.dataCurrent {
+	width:100%;
+}
+
+
+
+/* INNER, COLUMN, AND ROW DIVS */
+
+.inner {
+	padding:1px;
+	font-family:'HelveticaMonospacedW06-Rg';
+	font-size:0.8vw;
+	color:whitesmoke;
+}
+
+.row {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.colLaunch {
+	width:4.278%;
+}
+
+.colYear {
+	width:2.14%;
+} 
+
+.colMonth {
+	width:1.6%;
+} 
+
+.colDay {
+	width:1.6%;
+	text-align:right;
+} 
+
+.colTime {
+	width:2.14%;
+	text-align:right;
+} 
+
+.colSeconds {
+	width:2.14%;
+} 
+
+.colCospar {
+	width:6.42%;
+} 
+
+.colPlace {
+	width:14.97%;
+} 
+
+.colOriginal {
+	width:13.37%;
+} 
+
+.colSatcat {
+	width:3.21%;
+} 
+
+.colVehicle {
+	width:11.23%;
+} 
+
+.colSerial {
+	width:8.02%;
+} 
+
+.colSite {
+	width:16.58%;
+} 
+
+.colSuc {
+	width:1.6%;
+} 
+
+.colRef {
+	width:10.7%;
+} 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
