@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>GeoGraphics: Objects in Orbit</title>
+    <title>Objects in Orbit</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
   	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
-      <link rel="preload" href="assets/fonts/HelveticaMonospacedW06-Rg.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preloader" href="assets/css/fonts/HelveticaMonospacedW06-Rg.woff" as="font" type="font/woff" crossorigin>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
@@ -27,6 +27,7 @@
     <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <meta name="format-detection" content="telephone=no">
   	<script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   	<script src="assets/js/main.js"></script>
@@ -6470,7 +6471,10 @@
     </div>
 
     <div class="imageEarth">
-        <img src="assets/images/first/earth.png" alt="Earth">
+        <img id="earth" src="assets/images/first/earth.png" alt="Earth">
+    </div>
+    <div class="imageEarthDark">
+        <img id="earth" src="assets/images/first/earth-dark.png" alt="Earth">
     </div>
 
 <div class="block1">
@@ -12897,7 +12901,6 @@
     <div class="imageRecordSeven">
         <img src="assets/images/apollo/record-seven.svg" alt="">
     </div>
-    
     <div class="moonObjects">
         <?xml version="1.0" encoding="utf-8"?>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -19349,7 +19352,7 @@
     </div>
 
     <div class="issVideoWindow">
-        <iframe width="100%" height="100%" src="https://ustream.tv/embed/9408562" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+        <iframe width="100%" height="100%" src="https://ustream.tv/embed/9408562" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0px none transparent;"></iframe>
     </div>
     <div class="issTrackerWindow">
         <iframe width="100%" height="100%" src="https://isstracker.pl/en/widget/map?&disableInfoBox=1&lang=en&z=4&mapType=satellite&units=metric&preloader=1&showSatToolti&disableInfoBox=1&lang=en&z=4&mapType=satellite&units=metric&preloader=1&showSatTooltip=1&dayNightLayer=1&showFutureOrbit=1&dayNightLayer=1&showFutureOrbit=1" style="border: 0px;"></iframe>
@@ -25730,7 +25733,7 @@
     </div>
 
     <div class="imageGnssEarth">
-        <img src="assets/images/gnss/earth-grid.svg" alt="A mesh or grid sphere">
+        <img src="assets/images/gnss/earth-satgrid.svg" alt="">
     </div>
     <div class="imageGnssCircle">
         <img src="assets/images/shapes/Circle.png" alt="">
@@ -32123,12 +32126,6 @@
 
     </div>
 
-        <!-- 
-    <div class="imageObSverdrup">
-        <a href="" onmouseover="pickimg();return false;" onclick="return false;"><img SRC="assets/images/observation/ob-sverdrup.jpg" name="randimg" style="border: 1.4px solid whitesmoke;" ></a>
-    </div>
-    -->
-
     <div class="imageObBlue">
         <img src="assets/images/observation/ob-blue.png" alt="3D earth mapping Sea Surface Height Anomaly">
     </div>
@@ -32150,11 +32147,17 @@
     <div class="imageLandsat">
         <img src="assets/images/observation/landsat.svg" alt="">
     </div>
-
-    <div class="obVideoWindow">
-        <iframe width="100%" height="100%" src="https://ustream.tv/embed/17074538" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+    <div class="imageWindowOb1">
+        <img src="assets/images/observation/ob-guatemala.jpg" alt="" onmouseover="ic1.next(this)">
+    </div>
+    <div class="imageWindowOb2">
+        <img src="assets/images/observation/ob-surigae.jpg" alt="" onmouseover="ic2.next(this)">
     </div>
 
+    <div class="obVideoWindow">
+        <iframe width="100%" height="100%" src="https://ustream.tv/embed/17074538" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0px none transparent;"></iframe>
+    </div>
+    
     <div class="titleObservation">Earth Observation Satellites</div>
 
 </div>
@@ -38591,13 +38594,98 @@
         </div>
     </div>
 
-<div class="imageWindowOb1">
-    <img src="assets/images/observation/ob-lituya-bay.jpg" alt="">
-</div>
+    <div class="graph">
+        <img src="assets/images/current/Graph.svg" alt="">
+    </div>
+    <div class="values">
+<mark class="values0">&nbsp;</br></mark>
+<mark class="values1">20,000</br></mark>
+<mark class="values2">&nbsp;</br></mark>
+<mark class="values1">15,000</br></mark>
+<mark class="values2">&nbsp;</br></mark>
+<mark class="values1">10,000</br></mark>
+<mark class="values2">&nbsp;</br></mark>
+<mark class="values1">&nbsp;5,000</br></mark>
+<mark class="values3">&nbsp;</br></mark>
+<mark class="values1">&nbsp;1,000</br></mark>
+    </div>
+    <div class="key">
+        Number of Objects in Earth Orbit, 1956 &ndash; 2020</br></br>
+        <mark class="red">――</mark> Total Objects</br>
+        <mark class="green">――</mark> Fragmentation Debris</br>
+        <mark class="blue">――</mark> Spacecraft</br>
+        <mark class="pink">――</mark> Mission Related Debris</br>
+        <mark class="yellow">――</mark> Rocket Bodies
+    </div>
+    <a href="https://g-e-o.club/" target="_blank">
+    <div class="imageCurrentTriangle">
+        <img src="assets/images/shapes/Triangle.png" alt="">
+    </div>
+    </a>
+    <div class="imageHole">
+        <img src="assets/images/current/hole.png" alt="">
+    </div>
+    <div class="satObjects">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="100%" height="100%" viewBox="0 0 1894 1521" style="enable-background:new 0 0 1894 1521;" xml:space="preserve">
+             <circle class="satCircle" cx="805.46" cy="496.25" r="9.13"/>
+             <circle class="satCircle" cx="1046.8" cy="451.41" r="9.13"/>
+             <circle class="satCircle" cx="1119.34" cy="748.73" r="9.13"/>
+             <circle class="satCircle" cx="277.09" cy="1359.07" r="9.13"/>
+             <circle class="satCircle" cx="133.11" cy="1432.46" r="9.13"/>
+             <circle class="satCircle" cx="498.16" cy="1303.62" r="9.13"/>
+             <circle class="satCircle" cx="414.34" cy="1265.42" r="9.13"/>
+             <circle class="satCircle" cx="450.86" cy="1349.94" r="9.13"/>
+             <circle class="satCircle" cx="332.86" cy="1274.55" r="9.13"/>
+             <circle class="satCircle" cx="305.47" cy="1023.68" r="9.13"/>
+             <circle class="satCircle" cx="144.85" cy="891.87" r="9.13"/>
+             <circle class="satCircle" cx="163.11" cy="818.42" r="9.13"/>
+             <circle class="satCircle" cx="197.88" cy="827.55" r="9.13"/>
+             <circle class="satCircle" cx="197.88" cy="748.73" r="9.13"/>
+             <circle class="satCircle" cx="258.83" cy="684.74" r="9.13"/>
+             <circle class="satCircle" cx="163.11" cy="666.48" r="9.13"/>
+             <circle class="satCircle" cx="684.94" cy="657.35" r="9.13"/>
+             <circle class="satCircle" cx="8.89" cy="88.41" r="9.13"/>
+             <circle class="satCircle" cx="586.12" cy="88.41" r="9.13"/>
+             <circle class="satCircle" cx="694.07" cy="70.15" r="9.13"/>
+             <circle class="satCircle" cx="30.6" cy="845.81" r="9.13"/>
+             <circle class="satCircle" cx="108.32" cy="827.55" r="9.13"/>
+             <circle class="satCircle" cx="405.21" cy="938.8" r="9.13"/>
+             <circle class="satCircle" cx="1137.6" cy="1165.98" r="9.13"/>
+             <circle class="satCircle" cx="1137.6" cy="1240.5" r="9.13"/>
+             <circle class="satCircle" cx="1194.24" cy="1175.11" r="9.13"/>
+             <circle class="satCircle" cx="1277.07" cy="1256.29" r="9.13"/>
+             <circle class="satCircle" cx="870.89" cy="1501.72" r="9.13"/>
+             <circle class="satCircle" cx="947.68" cy="1312.75" r="9.13"/>
+             <circle class="satCircle" cx="441.73" cy="1231.37" r="9.13"/>
+             <circle class="satCircle" cx="1322.07" cy="460.54" r="9.13"/>
+             <circle class="satCircle" cx="1137.6" cy="638.68" r="9.13"/>
+             <circle class="satCircle" cx="1424.01" cy="693.87" r="9.13"/>
+             <circle class="satCircle" cx="1232.19" cy="560.14" r="9.13"/>
+             <circle class="satCircle" cx="1480.22" cy="929.67" r="9.13"/>
+             <circle class="satCircle" cx="1760.47" cy="781.8" r="9.13"/>
+             <circle class="satCircle" cx="1875.11" cy="693.87" r="9.13"/>
+             <circle class="satCircle" cx="1660.38" cy="836.68" r="9.13"/>
+             <circle class="satCircle" cx="1713.58" cy="693.87" r="9.13"/>
+             <circle class="satCircle" cx="1713.58" cy="781.8" r="9.13"/>
+             <circle class="satCircle" cx="1713.58" cy="818.42" r="9.13"/>
+             <circle class="satCircle" cx="1295.33" cy="442.28" r="9.13"/>
+             <circle class="satCircle" cx="507.29" cy="712.13" r="9.13"/>
+             <circle class="satCircle" cx="441.73" cy="460.54" r="9.13"/>
+             <circle class="satCircle" cx="314.6" cy="469.67" r="9.13"/>
+             <circle class="satCircle" cx="432.6" cy="405.82" r="9.13"/>
+             <circle class="satCircle" cx="277.09" cy="379.86" r="9.13"/>
+             <circle class="satCircle" cx="889.15" cy="326.3" r="9.13"/>
+             <circle class="satCircle" cx="188.75" cy="344.56" r="9.13"/>
 
-<div class="imageWindowOb2">
-    <img src="assets/images/observation/ob-pacaya-eruption.jpg" alt="" style="border: 1.3px solid whitesmoke">
-</div>
+
+        </svg>  
+    </div>
+
+    <div class="copy">
+        &copy; Amelia Stockman, Monash University, 2021. 
+    </div>
 
     <div class="titleCurrent">Space Debris</div>
 

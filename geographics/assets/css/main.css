@@ -3,11 +3,15 @@ body {
 	font-size:11px;
 	color:whitesmoke;
 	background-color:black;
+	-webkit-user-select:none;  /* Chrome all / Safari all */
+	-moz-user-select:none;     /* Firefox all */
+	-ms-user-select:none;      /* IE 10+ */
+	user-select:none;          /* Likely future */ 
 }
 
 @font-face {
     font-family:'HelveticaMonospacedW06-Rg';
-    src:url('HelveticaMonospacedW06-Rg.woff') format('woff');
+    src:url('fonts/HelveticaMonospacedW06-Rg.woff') format('woff');
     font-weight:normal;
     font-style:normal;
     font-display:swap;
@@ -26,51 +30,22 @@ body {
 
 img {
 	width:100%;
+	display:block;
 }
 
-
-
-
-.stack {
-	width: 40%;
-	height:6000px;
-	z-index: 40;
+iframe {
+	display:block;
 }
-
-.stackObjects {  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 5%); }
-    to   { transform: translate(0, -0px); }    
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* FIRST IMAGES */
 
-
 .titleFirst {
 	font-family:Helvetica;
 	font-size:5vw;
 	font-weight:600;
-	line-height: 114%;
+	line-height:114%;
 	color:whitesmoke;
 	text-shadow:0 0 3px black;
 	width:38%;
@@ -80,39 +55,58 @@ img {
 	z-index:15;
 }
 
+.randomSat {
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0%;
+	left:0%;
+	z-index:10;
+}
+
 .imageEarth {
-	width:40%;
+	width:32%;
 	position:absolute;
 	top:10%;
-	right:7%;
+	right:10%;
+	z-index:10;
+	border-radius:50%;
+	overflow:hidden;
+	transition:opacity 1s ease-in-out;
+}
+
+.imageEarth:hover {
+	opacity:0;
+}
+
+.imageEarthDark {
+	width:32%;
+	position:absolute;
+	top:10%;
+	right:10%;
 	z-index:9;
 	border-radius:50%;
 	overflow:hidden;
-	cursor:move;
-	cursor:grab;
 }
 
 .block1 {
 	width:42%;
-	height:40vh;
-	overflow: scroll;
-	overflow-x: hidden;
+	height:26vw;
+	overflow:scroll;
+	overflow-x:hidden;
 	position:absolute;
 	top:20%;
 	left:4%;
-	z-index:8;
-	background-color: black;
-	padding: 2vw;
+	z-index:12;
+	background-color:black;
+	padding:2vw;
 	font-family:Helvetica;
 	font-size:1.6vw;
 	font-weight:600;
-	line-height: 110%;
-	border: 1.4px solid whitesmoke;
+	line-height:110%;
+	border:1px solid whitesmoke;
 	color:whitesmoke;
-
-
 }
-
 
 
 
@@ -172,7 +166,7 @@ img {
 .imageLunarVehicle {
 	width:16.5%;
 	position:absolute;
-	top:-5%;
+	top:-3%;
 	right:54.5%;
 	z-index:9;
 	border-radius:50%;
@@ -352,16 +346,15 @@ img {
 	fill-opacity:0;
 	stroke:whitesmoke;
 	stroke-width:1.3551;
-	stroke-miterlimit:10;
+	transition:fill .3s ease-out, stroke-width .3s ease-out;
 }
 
 .moonCircle:hover {
 	fill:whitesmoke;
 	fill-opacity:1;
-	stroke:whitesmoke;
 	stroke-width:8;
-	stroke-miterlimit:10;
 }
+
 
 /* ISS IMAGES */
 
@@ -460,7 +453,8 @@ img {
 	right:10%;
 	z-index:1;
 	background-color:black;
-	border:1.4px solid whitesmoke;
+	border:1px solid whitesmoke;
+	overflow:hidden;
 }
 
 .issTrackerWindow {
@@ -471,7 +465,8 @@ img {
 	right:15%;
 	z-index:1;
 	background-color:black;
-	border:1.4px solid whitesmoke;
+	border:1px solid whitesmoke;
+	overflow:hidden;
 }
 
 
@@ -492,9 +487,9 @@ img {
 }
 
 .imageGnssEarth {
-	width:45%;
+	width:76%;
 	position:absolute;
-	top:20%;
+	top:4%;
 	right:17%;
 	z-index:-1;
 }
@@ -507,7 +502,9 @@ img {
 	right:10%;
 	z-index:9;
 	background-color:whitesmoke;
-	border:1.4px solid whitesmoke;
+	border:1px solid black;
+	overflow:hidden;
+	filter:invert() hue-rotate(200deg);
 }
 
 .imageGnssCircle {
@@ -605,6 +602,10 @@ img {
 	cursor:grab;
 }
 
+.imageEarthEclipse:active {
+	cursor:grabbing;
+}
+
 .imageObBlue {
 	width:18%;
 	position:absolute;
@@ -615,6 +616,10 @@ img {
 	overflow:hidden;
 	cursor:move;
 	cursor:grab;
+}
+
+.imageObBlue:active {
+	cursor:grabbing;
 }
 
 .imageObYellow {
@@ -629,11 +634,15 @@ img {
 	cursor:grab;
 }
 
+.imageObYellow:active {
+	cursor:grabbing;
+}
+
 .imageObRed {
 	width:18%;
 	position:absolute;
 	top:74%;
-	right:4.5%;
+	right:4%;
 	z-index:9;
 	border-radius:50%;
 	overflow:hidden;
@@ -641,16 +650,24 @@ img {
 	cursor:grab;
 }
 
+.imageObRed:active {
+	cursor:grabbing;
+}
+
 .imageObCircle {
 	width:18%;
 	position:absolute;
 	top:97%;
-	right:4.5%;
+	right:4%;
 	z-index:9;
 	border-radius:50%;
 	overflow:hidden;
 	cursor:move;
 	cursor:grab;
+}
+
+.imageObCircle:active {
+	cursor:grabbing;
 }
 
 .imageObBig {
@@ -663,6 +680,9 @@ img {
 	cursor:grab;
 }
 
+.imageObBig:active {
+	cursor:grabbing;
+}
 
 .imageLandsat {
 	width:36%;
@@ -674,21 +694,53 @@ img {
 	cursor:grab;
 }
 
+.imageLandsat:active {
+	cursor:grabbing;
+}
+
+.imageWindowOb1 {
+	width:38%;
+	position:absolute;
+	top:20%;
+	left:32%;
+	border:1px solid whitesmoke;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageWindowOb1:active {
+	cursor:grabbing;
+}
+
+.imageWindowOb2 {
+	width:38%;
+	position:absolute;
+	top:38%;
+	right:10%;
+	border:1px solid whitesmoke;
+	cursor:move;
+	cursor:grab;
+}
+
+.imageWindowOb2:active {
+	cursor:grabbing;
+}
 
 .obVideoWindow {
-	width:36%;
-	height:26%;
+	width:38%;
+	height:28%;
 	position:absolute;
-	bottom:-2%;
+	bottom:-3%;
 	left:6%;
 	z-index:1;
 	background-color:black;
-	border:1.4px solid whitesmoke;
+	border:1px solid whitesmoke;
+	overflow:hidden;
 }
 
-
-
-
+.obVideoWindow:active {
+	cursor:grabbing;
+}
 
 
 
@@ -702,25 +754,168 @@ img {
 	text-shadow:0 0 3px black;
 	width:38%;
 	position:absolute;
-	top:6%;
+	top:7%;
 	left:2%;
-	z-index:15;
+	z-index:9;
 }
 
-.imageWindowOb1 {
-	width:36%;
+.key {
+	width:24%;
+	position:absolute;
+	top:20%;
+	left:20%;
+	padding:0.8vw;
+	font-family:'HelveticaMonospacedW06-Rg';
+	font-size:0.8vw;
+	line-height:120%;
+	color:whitesmoke;
+	background-color:black;
+	border:1px solid whitesmoke;
+	transition:color 1s ease-out, background-color 1s ease-out;
+	z-index:30;
+}
+
+.key:hover {
+	color:black;
+	background-color:whitesmoke;
+}
+
+mark.red {
+	color:#D2232A;
+	background:none;
+}
+
+mark.green {
+	color:#41AD49;
+	background:none;
+}
+
+mark.blue {
+	color:#00AEEF;
+	background:none;
+}
+
+mark.pink {
+	color:#EC008C;
+	background:none;
+}
+
+mark.yellow {
+	color:#FFF200;
+	background:none;
+}
+
+
+.graph {
+	width:80%;
 	position:absolute;
 	top:20%;
 	left:10%;
-	border: 1.4px solid whitesmoke;
+	z-index:2;
+	pointer-events:none;
 }
 
-.imageWindowOb2 {
-	width:36%;
+.values {
+	width:90%;
+	height:49vw;
 	position:absolute;
-	top:50%;
-	left:10%;
+	top:20%;
+	left:5%;
+	z-index:20;
+	font-family:'HelveticaMonospacedW06-Rg';
+	font-size:0.8vw;
+	line-height:120%;
+	color:whitesmoke;
+	z-index:2;
 }
+
+mark.values0 {
+	line-height:0.8vw;
+	background:none;
+	color:whitesmoke;
+}
+
+mark.values1 {
+	line-height:0.8vw;
+	background:none;
+	color:whitesmoke;
+}
+
+mark.values2 {
+	line-height:10vw;
+	background:none;
+	color:whitesmoke;
+}
+
+mark.values3 {
+	line-height:8vw;
+	background:none;
+	color:whitesmoke;
+}
+
+.imageCurrentTriangle {
+	width:18%;
+	position:absolute;
+	bottom:20%;
+	right:4%;
+	z-index:30;
+	cursor:help;
+}
+
+.imageHole {
+	width:25%;
+	position:absolute;
+	top:48%;
+	left:26%;
+	z-index:1;
+	pointer-events:none;
+}
+
+.satObjects {
+	width:90%;
+	position:absolute;
+	top:10%;
+	left:5%;
+	z-index:10;
+	overflow: visible;
+}
+
+.satCircle {
+	fill:black;
+	fill-opacity:0;
+	stroke:whitesmoke;
+	stroke-width:1.3551;
+	transition:fill .3s ease-out, stroke-width .3s ease-out;
+}
+
+.satCircle:hover {
+	fill:whitesmoke;
+	fill-opacity:1;
+	stroke-width:8;
+}
+
+.copy {
+	width:23%;
+	position:absolute;
+	bottom:2%;
+	right:2%;
+	padding:0.6vw;
+	font-family:'HelveticaMonospacedW06-Rg';
+	text-align:center;
+	font-size:0.8vw;
+	line-height:120%;
+	color:whitesmoke;
+	background-color:black;
+	border:1px solid whitesmoke;
+	transition:color 1s ease-out, background-color 1s ease-out;
+	z-index:30;
+}
+
+.copy:hover {
+	color:black;
+	background-color:whitesmoke;
+}
+
 
 
 
