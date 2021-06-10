@@ -3,17 +3,17 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2275 1666" style="enable-background:new 0 0 2275 1666;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#010101;stroke:#F4F5F5;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#F5F6F6;stroke-width:3;stroke-linejoin:round;stroke-dasharray:19.8728,19.8728;}
+	.st0{fill:#010101;stroke:#F4F5F5;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#F5F6F6;stroke-width:4;stroke-linejoin:round;stroke-dasharray:19.8728,19.8728;}
 </style>
 <g>
-	<rect x="0.17" y="0.41" class="st0" width="2274.65" height="1665.17"/>
-	<line class="st1" x1="0.17" y1="1600.08" x2="2274.83" y2="1600.08"/>
-	<line class="st1" x1="0.17" y1="1088.48" x2="2274.83" y2="1088.48"/>
-	<line class="st1" x1="0.17" y1="577.2" x2="2274.83" y2="577.2"/>
-	<line class="st1" x1="0.17" y1="1344.45" x2="2274.83" y2="1344.45"/>
-	<line class="st1" x1="0.17" y1="832.84" x2="2274.83" y2="832.84"/>
-	<line class="st1" x1="2.24" y1="321.56" x2="2274.83" y2="321.56"/>
-	<line class="st1" x1="0.17" y1="65.92" x2="2274.83" y2="65.92"/>
+	<rect x="9.1" y="10.6" class="st0" width="2256.8" height="1644.8"/>
+	<line class="st1" x1="9.1" y1="1590.7" x2="2265.9" y2="1590.7"/>
+	<line class="st1" x1="9.1" y1="1085.4" x2="2265.9" y2="1085.4"/>
+	<line class="st1" x1="9.1" y1="580.3" x2="2265.9" y2="580.3"/>
+	<line class="st1" x1="9.1" y1="1338.2" x2="2265.9" y2="1338.2"/>
+	<line class="st1" x1="9.1" y1="832.8" x2="2265.9" y2="832.8"/>
+	<line class="st1" x1="11.2" y1="327.8" x2="2265.9" y2="327.8"/>
+	<line class="st1" x1="9.1" y1="75.3" x2="2265.9" y2="75.3"/>
 </g>
 </svg>
