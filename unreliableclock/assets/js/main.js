@@ -1,3 +1,5 @@
+// CLOCK/COUNTER, random increments
+
 var start = 0;
 function count() {    
     start = start + 1;
@@ -12,6 +14,9 @@ function begin() {
 document.addEventListener('DOMContentLoaded', function () {    
     begin();
 });
+
+
+// CLOCK/COUNTER, correct 1s increments
 
 var start2 = 0;
 function count2() {    
@@ -28,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// TOGGLE SWITCH
 
 $(document).ready(function(){
     $(".switch input").on("change", function(e) {
@@ -42,6 +48,7 @@ $(document).ready(function(){
 });
 
 
+// CURSOR
 
 $(document).ready(function(){
     var cursor = $(".cursor");
@@ -148,7 +155,6 @@ $(document).ready(function(){
                     transform: "scale(1)"
                 });
             });
-
 
         $(window)
             .mousedown(function() {

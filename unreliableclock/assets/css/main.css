@@ -7,12 +7,54 @@ body {
 	color:black;
 }
 
+.page {
+	display:flex;
+	flex-wrap:wrap;
+	width:100vw;
+}
+
 div.right::-webkit-scrollbar {
-	width:5px;}
+	width:5px;
+}
 div.right::-webkit-scrollbar-track {
-	background:rgb(252, 252, 243);}
+	background:rgb(252, 252, 243);
+}
 div.right::-webkit-scrollbar-thumb {
-	background:black;}
+	background:black;
+}
+
+
+
+/* CURSOR (https://dev.to/b4two/how-to-make-a-custom-cursor-with-css-and-jquery-5g3m) */
+
+html,* {
+	cursor:none;
+}
+.cursor {
+	position:fixed;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color:#16693B;
+	pointer-events:none;
+	mix-blend-mode:difference;
+	z-index:999;
+	transition:transform 0.6s, background-color 0.6s;
+  }
+
+
+
+/* RIGHT, ESSAY TEXT */
+
+.right {
+	width:50vw;
+	height:100vh;
+	background-color:rgb(252, 252, 243);
+	overflow:scroll;
+	padding:20px;
+	padding-top:30px;
+	overflow-x:hidden;
+}
 
 a:link {
 	color:black;
@@ -38,20 +80,19 @@ a:active {
 	background:rgb(255, 207, 51);
 }
 
-.cursor {
-	position:fixed;
-	width:40px;
-	height:40px;
-	border-radius:50%;
-	background-color:#16693B;
-	pointer-events:none;
-	mix-blend-mode:difference;
-	z-index:999;
-	transition:transform 0.6s, background-color 0.6s;
-  }
+.linkNPR {
+	width:35vw;
+	margin-top:4.8vw;
+	padding-bottom:3vw;
+	font-size:2vw;
+	line-height:2.4vw;
+	border-bottom:black solid 1px;
+}
 
-html,* {
-cursor:none;
+.copy {
+	width:46vw;	
+	margin-top:2vw;
+	margin-bottom:1vw;
 }
 
 h1 {
@@ -106,36 +147,9 @@ h6 {
 	font-style:normal;
 }
 
-.linkNPR {
-	width:35vw;
-	margin-top:4.8vw;
-	padding-bottom:3vw;
-	font-size:2vw;
-	line-height:2.4vw;
-	border-bottom: black solid 1px;
-}
 
-.copy {
-	width:46vw;	
-	margin-top:2vw;
-	margin-bottom:1vw;
-}
 
-.page {
-	display:flex;
-	flex-wrap:wrap;
-	width:100vw;
-}
-
-.right {
-	width:50vw;
-	height:100vh;
-	background-color:rgb(252, 252, 243);
-	overflow:scroll;
-	padding:20px;
-	padding-top:30px;
-	overflow-x:hidden;
-}
+/* LEFT, CLOCK */
 
 .leftHidden {
 	width:50vw;
@@ -153,12 +167,12 @@ h6 {
 	font-style:normal;
 	color:rgb(252, 252, 243);
 	text-align:center;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
- 	-khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+	-webkit-touch-callout:none;
+    -webkit-user-select:none;
+ 	-khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; 
 }
 
 .left {
@@ -173,7 +187,7 @@ h6 {
 }
 
 #clockWrong {
-	position: absolute;
+	position:absolute;
 	width:47vw;
 	z-index:99;
 	font-family:antique-olive-nord, sans-serif;
@@ -183,66 +197,70 @@ h6 {
 	font-style:normal;
 	text-align:center;
 	color:rgb(252, 252, 243);
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
- 	-khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+	-webkit-touch-callout:none;
+    -webkit-user-select:none;
+ 	-khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; 
 }
 
+
+
+/* TOGGLE SWITCH (https://jsfiddle.net/o8ruye1k/3/) */
+
 .switch {
-    position: fixed;
+    position:fixed;
 	bottom:4vh;
 	left:4vh;
-    width: 60px;
-    height: 34px;
+    width:60px;
+    height:34px;
 	z-index:99;
   }
   
   .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
+    opacity:0;
+    width:0;
+    height:0;
   }
   
   .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(252, 252, 243);
-    -webkit-transition: .4s;
-    transition: .4s;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgb(252, 252, 243);
+    -webkit-transition:.4s;
+    transition:.4s;
   }
   
   .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: black;
-    -webkit-transition: .4s;
-    transition: .4s;
+    position:absolute;
+    content:"";
+    height:26px;
+    width:26px;
+    left:4px;
+    bottom:4px;
+    background-color:black;
+    -webkit-transition:.4s;
+    transition:.4s;
   }
   
   input:checked + .slider {
-    background-color: rgb(252, 252, 243);
+    background-color:rgb(252, 252, 243);
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform:translateX(26px);
+    -ms-transform:translateX(26px);
+    transform:translateX(26px);
   }
   
   .slider.round {
-    border-radius: 34px;
+    border-radius:34px;
   }
   
   .slider.round:before {
-    border-radius: 50%;
+    border-radius:50%;
   }
