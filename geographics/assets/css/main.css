@@ -92,10 +92,17 @@ iframe {
 	background-color:black;
 	padding:2vw;
 	font-family:Helvetica;
-	font-size:1.6vw;
+	font-size:2.2vw;
 	font-weight:600;
 	line-height:110%;
 	border:1px solid whitesmoke;
+	color:whitesmoke;
+}
+
+h1 {
+	font-family:'HelveticaMonospacedW06-Rg';
+	font-size:0.8vw;
+	line-height:120%;
 	color:whitesmoke;
 }
 
