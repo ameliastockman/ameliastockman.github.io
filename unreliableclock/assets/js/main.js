@@ -94,7 +94,7 @@ $(document).ready(function(){
 
         $("h4")
             .mouseenter(function() {
-                cursor.css("background-color", "#16693B");
+                cursor.css("background-color", "#C2B33B");
             })
             .mouseenter(function() {
                 cursor.css({
@@ -109,7 +109,7 @@ $(document).ready(function(){
 
          $("h5")
             .mouseenter(function() {
-                cursor.css("background-color", "#C2B33B");
+                cursor.css("background-color", "#16693B"); 
             })
             .mouseenter(function() {
                 cursor.css({
