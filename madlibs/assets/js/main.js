@@ -165,7 +165,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    var quotes = new Array("the photobooth", "jurrasic park", "our favourite D.I.Y store", "see the cherry blossoms", "see Astro-Boy", "wear the panda costume", "Mario's house", "tempt fate with the tarot cards");
+    var quotes = new Array("the photobooth", "jurassic park", "our favourite D.I.Y store", "see the cherry blossoms", "see Astro-Boy", "wear the panda costume", "Mario's house", "tempt fate with the tarot cards");
     var randno = Math.floor(Math.random()*(quotes.length));
     $('.blank21').append(quotes[randno]);
     console.log(randno);
