@@ -1,0 +1,203 @@
+body {
+	background-color: blue;
+	font-family: 'AppleGaramondLight';
+	font-size: 40px;
+	letter-spacing: 0.01em;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	overscroll-behavior-x: none;
+}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	::selection {
+		background: white;
+		color: black;
+	}
+
+	a::selection {
+		background: white;
+		color: black;
+	}
+
+@font-face {
+	font-family: 'AppleGaramondLight';
+	src: url('fonts/AppleGaramondLight.woff2') format('woff2');
+}
+
+.material-icons { font-size: 100px; }
+
+.tag {
+	border-bottom: solid 1px white;
+}
+
+a {
+	background-color: none;
+	color: white;
+	text-decoration: none;
+	text-transform: none;
+  }
+  
+	a:hover {
+		background-color: white;
+		border-radius: 10px;
+	}
+	
+	a:active {
+		background-color: white;
+		border-radius: 10px;
+	}
+	
+	a:visited {
+		color: white;
+	}
+
+	a:focus {
+		background-color: white;
+		border-radius: 10px;
+	}
+
+		a.blue:hover {
+			background-color: transparent;
+		}
+
+		a.blue:active {
+			background-color: transparent;
+		}
+
+		a.blue:focus {
+			background-color: transparent;
+		}
+
+		.nobreak {
+			white-space:nowrap;
+		}
+
+.page {
+	display: flex;
+	flex-flow: row wrap; /* Main Axis: Horizontal */
+	overflow: scroll;
+	width: 100vw;
+	height: 100vh;
+}
+
+.heading {
+	display: flex; /* This is the flex container/parent */
+	flex-flow: row wrap; /* Main Axis: Horizontal */
+	align-content: flex-start;
+	gap: 30px 16px; /* gap between row and column */
+
+	min-height: 100vh;
+	width: 50%;
+	padding-left: calc(30px + 2vw);
+	padding-right: calc(30px + 2vw);
+	padding-top: 50px;
+	padding-bottom: 60px;
+	background-color: blue;
+	border-right: solid 1px white;
+}
+
+	.ftitle {
+		font-size: 8vw;
+		line-height: 86%;
+		user-select: none;
+		padding-bottom: 15px;
+	}
+
+	.fsub {
+		font-size: calc(32px + 1vw);
+		user-select: none;
+		padding-bottom: calc5px;
+	}
+
+	.fcopy {
+		min-width: 350px;
+		max-width: 350px;
+		border: solid 1px white;
+		border-radius: 40px;
+		padding: 10px;
+		background: none;
+
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 11px;
+		color: white;
+		text-align: center;
+		user-select: none;
+	}
+
+		.fcopy:hover {
+			background: black;
+		}
+
+
+.friends {
+	display: flex; /* This is the flex container/parent */
+	flex-flow: row wrap; /* Main Axis: Horizontal */
+	align-content: flex-start;
+
+	height: 100vh;
+	width: 50%;
+	background-color: blue;
+	overflow: scroll;
+}
+
+	.bb {
+		border-bottom: solid 1px white;
+	}
+
+	.block {
+		width: 100%;
+		height: 300px;
+	}
+
+
+@media  screen and (max-width: 988px) {
+
+	.heading {
+		flex-flow: column nowrap;
+		width: 100%;
+		min-height: 450px;
+		border-right: none;
+		border-bottom: solid 1px white;
+	}
+
+	.ftitle {
+		font-size: 16vw;
+		line-height: 86%;
+		user-select: none;
+		padding-bottom: calc(10px + 1vw);
+	}
+
+	.fsub {
+		font-size: calc(30px + 2vw);
+		max-width: 800px;
+	}
+
+	.friends {
+		height: fit-content;
+		width: 100%;
+	}
+}
+
+@media  screen and (max-width: 450px) {
+
+	.heading {
+		min-height: 400px;
+	}
+
+	.fsub {
+		font-size: calc(25px + 2vw);
+	}
+
+	.fcopy {
+		max-width: 210px;
+		min-width: 210px;
+	}
+
+	.uni {
+		display: none;
+	}
+
+}

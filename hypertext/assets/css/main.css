@@ -54,12 +54,20 @@ a {
 		border-radius: 10px;
 	}
 
+		a.white {
+			color: white;
+		}
+
+		.nobreak {
+			white-space:nowrap;
+		}
+
 .container {
 	display: flex;
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	margin-bottom: 600px;
+	margin-bottom: 545px;
 	background-color: black;
 }
 
@@ -174,7 +182,7 @@ a {
 		cursor: pointer;
 	}
 
-
+	
 .footer {
 	display: flex; /* This is the flex container/parent */
 	flex-flow: row wrap; /* Main Axis: Horizontal */
@@ -184,7 +192,7 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 600px;
+	height: 545px;
 	z-index: -1;
 	padding-left: 45px;
 	padding-right: 45px;
@@ -216,7 +224,6 @@ a {
 			user-select: none;
 		}
 	
-
 	.right { 
 		/* This is for the flex item */
 		flex-grow: 1; /* How much space will this item get compared to other items */
@@ -252,3 +259,6 @@ a {
 			user-select: none;
 		}
 
+		.copy:hover {
+			background: black;
+		}
