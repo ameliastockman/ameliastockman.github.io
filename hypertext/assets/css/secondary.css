@@ -13,13 +13,13 @@ body {
 	}
 
 	::selection {
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 	}
 
 	a::selection {
-		background: white;
-		color: black;
+		background: black;
+		color: white;
 	}
 
 @font-face {
@@ -27,11 +27,25 @@ body {
 	src: url('fonts/AppleGaramondLight.woff2') format('woff2');
 }
 
-.material-icons { font-size: 100px; }
+.material-icons { 
+	font-size: 100px; 
+} 
 
-.tag {
+	.smaller {
+		font-size: 0.8em;
+	}
+
+.underline {
 	border-bottom: solid 1px white;
 }
+
+.underline2 {
+	border-bottom: solid 1px white;
+}
+
+	.underline2:hover {
+		border: none;
+	}
 
 a {
 	background-color: none;
@@ -109,28 +123,24 @@ a {
 	.fsub {
 		font-size: calc(32px + 1vw);
 		user-select: none;
-		padding-bottom: calc5px;
+		padding-bottom: 4px;
+		cursor: help;
 	}
 
 	.fcopy {
-		min-width: 350px;
-		max-width: 350px;
+		min-width: 420px;
+		max-width: 420px;
 		border: solid 1px white;
 		border-radius: 40px;
 		padding: 10px;
 		background: none;
 
 		font-family: 'Courier New', Courier, monospace;
-		font-size: 11px;
+		font-size: 14px;
 		color: white;
 		text-align: center;
 		user-select: none;
 	}
-
-		.fcopy:hover {
-			background: black;
-		}
-
 
 .friends {
 	display: flex; /* This is the flex container/parent */
@@ -148,10 +158,48 @@ a {
 	}
 
 	.block {
+		display: flex; /* This is the flex container/parent */
+		flex-flow: row wrap; /* Main Axis: Horizontal */
+		align-content: flex-start;
+		gap: 22px 16px; /* gap between row and column */
+
 		width: 100%;
-		height: 300px;
+		min-height: 300px;
+		padding: 40px;
+		font-size: 32px;
 	}
 
+		.title {
+			line-height: 120%;
+		}
+		
+		.description {
+
+		}
+		
+		.tags {
+			display: flex;
+			flex-flow: row wrap; /* Main Axis: Horizontal */
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: flex-start;
+			gap: 10px 10px; /* gap between row and column */
+		}
+		
+			.tag {
+				border: solid 1px white;
+				border-radius: 40px;
+				padding: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
+				background: none;
+		
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 14px;
+				color: white;
+				text-align: center;
+				user-select: none;
+			}
 
 @media  screen and (max-width: 988px) {
 
@@ -181,6 +229,19 @@ a {
 	}
 }
 
+@media  screen and (max-width: 550px) {
+
+	.fcopy {
+		max-width: 250px;
+		min-width: 250px;
+	}
+
+	.uni {
+		display: none;
+	}
+
+}
+
 @media  screen and (max-width: 450px) {
 
 	.heading {
@@ -192,8 +253,8 @@ a {
 	}
 
 	.fcopy {
-		max-width: 210px;
-		min-width: 210px;
+		max-width: 250px;
+		min-width: 250px;
 	}
 
 	.uni {
