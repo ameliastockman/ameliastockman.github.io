@@ -34,37 +34,71 @@ a {
 	text-decoration: none;
 	text-transform: none;
   }
+		a.copy {
+			color: white;
+		}
+
+		a.white {
+			color: white;
+		}
   
 	a:hover {
 		background-color: blue;
-		border-radius: 10px;
 	}
+
+		a.ten:hover {
+			border-radius: 10px;
+		}
+
+		a.copy:hover {
+			border-radius: 40px;
+		}
 	
 	a:active {
 		background-color: blue;
-		border-radius: 10px;
 	}
+
+		a.ten:active {
+			border-radius: 10px;
+		}
+
+		a.copy:active {
+			background-color: black;
+			border-radius: 40px;
+		}
 	
 	a:visited {
 		color: blue;
 	}
 
-	a:focus {
-		background-color: blue;
-		border-radius: 10px;
-	}
-
-		a.white {
+		a.copy:visited {
 			color: white;
 		}
 
-		.nobreak {
-			white-space:nowrap;
+		a.white:visited {
+			color: white;
 		}
+
+	a:focus {
+		background-color: blue;
+	}
+
+		a.ten:focus {
+			border-radius: 10px;
+		}
+
+		a.white:focus {
+			color: white;
+		}
+
+.nobreak {
+	white-space:nowrap;
+}
 
 .container {
 	display: flex;
 	position: relative;
+	justify-content: center;
 	width: 100vw;
 	height: 100vh;
 	margin-bottom: 545px;
@@ -265,7 +299,54 @@ a {
 			background: black;
 		}
 
+@media  screen and (min-width: 1536px) {
+
+	.chat {
+
+		width: 1200px;
+
+	}
+
+}
+
+
 @media  screen and (max-width: 550px) {
+
+	body {
+		font-size: 34px;
+	}
+
+	.copy {
+		max-width: 250px;
+		min-width: 250px;
+	}
+
+	.uni {
+		display: none;
+	}
+
+}
+
+@media  screen and (max-width: 480px) {
+
+	body {
+		font-size: 30px;
+	}
+
+	.chat {
+		width: 90%;
+		margin: 24px;
+	}
+	
+	.messages {
+		padding: 11px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.send {
+		display: none;
+	}
 
 	.copy {
 		max-width: 250px;

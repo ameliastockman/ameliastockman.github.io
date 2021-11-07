@@ -47,22 +47,64 @@ body {
 		border: none;
 	}
 
+.nobreak {
+		white-space:nowrap;
+}
+
 a {
 	background-color: none;
 	color: white;
 	text-decoration: none;
 	text-transform: none;
   }
+
+		a.fcopy {
+			color: white;
+		}
   
 	a:hover {
 		background-color: white;
-		border-radius: 10px;
 	}
+
+		a.blue:hover {
+			background-color: transparent;
+		}
+
+		a.ten:hover {
+			border-radius: 10px;
+		}
+
+		a.fcopy:hover {
+			background-color: black;
+			border-radius: 40px;
+		}
+
+		a.tag:hover {
+			background-color: black;
+			border-radius: 40px;
+		}
 	
 	a:active {
 		background-color: white;
-		border-radius: 10px;
 	}
+
+		a.ten:hover {
+			border-radius: 10px;
+		}
+
+		a.blue:active {
+			background-color: transparent;
+		}
+
+		a.fcopy:active {
+			background-color: black;
+			border-radius: 40px;
+		}
+
+		a.tag:active {
+			background-color: black;
+			border-radius: 40px;
+		}
 	
 	a:visited {
 		color: white;
@@ -70,24 +112,25 @@ a {
 
 	a:focus {
 		background-color: white;
-		border-radius: 10px;
 	}
 
-		a.blue:hover {
-			background-color: transparent;
-		}
-
-		a.blue:active {
-			background-color: transparent;
+		a.ten:focus {
+			border-radius: 10px;
 		}
 
 		a.blue:focus {
 			background-color: transparent;
 		}
 
-		.nobreak {
-			white-space:nowrap;
+		a.fcopy:focus {
+			background-color: black;
 		}
+
+		a.tag:focus {
+			background-color: black;
+		}
+
+
 
 .page {
 	display: flex;
@@ -171,10 +214,6 @@ a {
 
 		.title {
 			line-height: 120%;
-		}
-		
-		.description {
-
 		}
 		
 		.tags {
