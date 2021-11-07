@@ -6,6 +6,7 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	overscroll-behavior-x: none;
+	scroll-behavior: smooth;
 }
 
 	body::-webkit-scrollbar {

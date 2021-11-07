@@ -6,11 +6,8 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	overscroll-behavior-x: none;
+	scroll-behavior: smooth;
 }
-
-	body::-webkit-scrollbar {
-		display: none;
-	}
 
 	::selection {
 		background: blue;
@@ -132,6 +129,28 @@ a {
 
 	.messages::-webkit-scrollbar {
 		display: none;
+	}
+
+	@keyframes fadein {
+		from	{opacity: 0;}
+		to		{opacity: 1;}
+	}
+
+	.humanfade {
+		animation-name: fadein;
+		animation-duration: 0.8s;
+		animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
+	}	
+
+	@keyframes bfadein {
+		from	{opacity: 0;}
+		to		{opacity: 1;}
+	}
+
+	.botfade {
+		animation-name: bfadein;
+		animation-duration: 0.8s;
+		animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0);
 	}
 
 	.bot {
