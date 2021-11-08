@@ -6,6 +6,7 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	overscroll-behavior-x: none;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -97,7 +98,9 @@ a {
 	position: relative;
 	justify-content: center;
 	width: 100vw;
+	max-width: 100%;
 	height: 100vh;
+	max-height: 100%;
 	margin-bottom: 545px;
 	background-color: black;
 }
@@ -123,7 +126,6 @@ a {
 	background-color: black;
 	border: solid 1px white;
 	border-radius: 40px;
-
 	overflow: scroll;
 }
 
@@ -241,10 +243,10 @@ a {
 	flex-flow: row wrap; /* Main Axis: Horizontal */
 	align-content: flex-start;
 	gap: 30px 16px; /* gap between row and column */
-	overflow: scroll;
+	overflow: hidden;
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	width: 100vw;
 	height: 545px;
 	z-index: -1;
 	padding-left: 45px;
