@@ -1,0 +1,212 @@
+body {
+	background-color:lightgrey;
+	font-family: ibm-plex-sans, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color:black;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: black;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: black;
+	text-decoration: none;
+  }
+  
+  a:active {
+	color: black;
+	text-decoration: none;
+  }
+
+::-moz-selection { background: violet; }
+::selection { background: violet; }
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+h3 {
+	font-style: italic;
+}
+
+p {
+	margin-bottom:16px;
+}
+
+.bold {
+	font-weight: 400;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.page {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	width: 100vw;
+	max-width: 100%;
+	height: 100vh;
+	max-height: 100%;
+}
+
+.rightside {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	width: 40%;
+	height: 100%;
+	padding: 16px;
+	padding-left: 0px;
+}
+
+	.essay {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		width: 100%;
+		height: calc(100% - 32px);
+		padding-top: 16px;
+		padding-left: 16px;
+		padding-right: 24px;
+		border-bottom: solid 1px black;
+		overflow: scroll;
+		cursor: default;
+	}
+
+		.header {
+			width: 100%;
+			height: 26%;
+			min-height: 124px;
+		}
+
+		.controls {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-content: flex-start;
+			width: 100%;
+			height: 32px;
+			padding-top: 4px;
+			padding-left: 16px;
+			padding-right: 16px;
+			user-select: none;
+		}
+
+.leftside {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: stretch;
+	align-items: stretch;
+	align-content: stretch;
+	width: 60%;
+	height: 100%;
+	padding: 16px;
+}
+
+	.grid {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: stretch;
+		align-items: stretch;
+		align-content: stretch;
+		width: 100%;
+		height: 100%;
+		border-bottom: solid 1px black;
+		border-left: solid 1px black;
+	}
+
+		.cell {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			min-width: 5%;
+			min-height: 5%;
+			border-top: solid 1px black;
+			border-right: solid 1px black;
+			user-select: none;
+		}
+
+	.chromereader {
+		display: none;
+		width: 100%;
+		height: 100%;
+		border: solid 1px black;
+		background-color:violet;
+		user-select: none;
+		cursor: se-resize;
+	}
+
+	.aboutcr {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		width: 60%;
+		height: 100%;
+		padding: 16px;
+	}
+
+	.topline {
+		border-top: solid 1px black;
+		padding-top: 10px;
+	}
+
+		.showabout {
+			background: black;
+			color: lightgrey;
+			cursor: pointer;
+		}
+
+			.showabout:hover {
+				background: violet;
+				color: black;
+				cursor: pointer;
+			}
+
+		.hideabout {
+			background: black;
+			color: lightgrey;
+			cursor: pointer;
+		}
+
+			.hideabout:hover {
+				background: lightgrey;
+				color: black;
+				cursor: pointer;
+			}
+
+.a, .ability, .able, .about, .abram, .abstract, .abstracted, .abstraction, .abstracts, .absurd, .across, .actual, .advent, .age, .agree, .agreement, .aleph-beth, .alphabet, .already, .also, .am, .an, .and, .anyone, .are, .around, .as, .at, .back, .baffling, .barely, .based, .basic, .be, .became, .because, .become, .been, .before, .being, .best-known, .best, .between, .bleed, .blocks, .book, .boundary, .building, .but, .by, .call, .can, .causes, .change, .characters, .circle, .claims, .clear, .code, .combination, .complexity, .conceptual, .confuse, .confusion, .consonant, .control, .convey, .conveyed, .conveys, .could, .cultural, .culture, .dangerous, .david, .deal, .deals, .define, .defines, .depth, .directly, .distance, .distilled, .do, .does, .doing, .dont, .down, .each, .ecologist, .egyptian, .embodied, .end, .especially, .essence, .every, .example, .experience, .explains, .extend, .eye, .eyes, .few, .finally, .finishing, .for, .forget, .forgetting, .forgotten, .form, .forms, .from, .glowing, .good, .got, .greeks, .had, .has, .have, .he, .head, .help, .hieroglyphics, .his, .history, .hold, .hope, .hopefully, .how, .human, .humans, .i, .identified, .if, .immobile, .in, .increasingly, .indeed, .inspired, .intended, .internal, .internalized, .into, .is, .it, .its, .itself, .job, .jumped, .just, .kind, .know, .language, .later, .letter, .letters, .level, .life, .like, .link, .literacy, .lived, .living, .long, .longer, .lost, .made, .many, .marks, .may, .me, .meaning, .measure, .minds, .modern, .moment, .monkey, .most, .much, .my, .myself, .naturally-occurring, .nature, .necessities, .new, .no, .not, .nothing, .notion, .now, .o, .obsessively, .of, .on, .once, .one, .only, .opens, .or, .original, .other, .our, .out, .over, .own, .oxs, .paper, .people, .perhaps, .physical, .pointless, .progress, .promoted, .purpose, .q, .question, .reach, .read, .reading, .real, .reality, .reasons, .represented, .rest, .right, .rootedness, .running, .same, .saw, .scope, .screen, .see, .seemed, .seems, .semites, .semitic, .sensuous, .series, .shape, .shared, .should, .signified, .signifier, .signifying, .so, .some, .sometimes, .speak, .spell, .spoken, .staring, .still, .struggle, .symbols, .tail, .taken, .term, .terms, .that, .the, .their, .them, .themselves, .then, .there, .these, .they, .thing, .things, .think, .this, .through, .throughout, .tied, .time, .to, .trained, .turned, .twenty-two, .understand, .understood, .unlike, .unquestionable, .up, .use, .using, .via, .visually, .wars, .was, .we, .weirdly, .were, .what, .when, .which, .why, .will, .with, .word, .words, .work, .world, .would, .write, .writer, .writers, .writes, .writing, .written, .wrote, .years, .you, .your, .yours {
+	font-style: normal;
+	font-weight: 300;
+}
+
+.a:hover,  .ability:hover,  .able:hover,  .about:hover,  .abram:hover,  .abstract:hover,  .abstracted:hover,  .abstraction:hover,  .abstracts:hover,  .absurd:hover,  .across:hover,  .actual:hover,  .advent:hover,  .age:hover,  .agree:hover,  .agreement:hover,  .aleph-beth:hover,  .alphabet:hover,  .already:hover,  .also:hover,  .am:hover,  .an:hover,  .and:hover,  .anyone:hover,  .are:hover,  .around:hover,  .as:hover,  .at:hover,  .back:hover,  .baffling:hover,  .barely:hover,  .based:hover,  .basic:hover,  .be:hover,  .became:hover,  .because:hover,  .become:hover,  .been:hover,  .before:hover,  .being:hover,  .best-known:hover,  .best:hover,  .between:hover,  .bleed:hover,  .blocks:hover,  .book:hover,  .boundary:hover,  .building:hover,  .but:hover,  .by:hover,  .call:hover,  .can:hover,  .causes:hover,  .change:hover,  .characters:hover,  .circle:hover,  .claims:hover,  .clear:hover,  .code:hover,  .combination:hover,  .complexity:hover,  .conceptual:hover,  .confuse:hover,  .confusion:hover,  .consonant:hover,  .control:hover,  .convey:hover,  .conveyed:hover,  .conveys:hover,  .could:hover,  .cultural:hover,  .culture:hover,  .dangerous:hover,  .david:hover,  .deal:hover,  .deals:hover,  .define:hover,  .defines:hover,  .depth:hover,  .directly:hover,  .distance:hover,  .distilled:hover,  .do:hover,  .does:hover,  .doing:hover,  .dont:hover,  .down:hover,  .each:hover,  .ecologist:hover,  .egyptian:hover,  .embodied:hover,  .end:hover,  .especially:hover,  .essence:hover,  .every:hover,  .example:hover,  .experience:hover,  .explains:hover,  .extend:hover,  .eye:hover,  .eyes:hover,  .few:hover,  .finally:hover,  .finishing:hover,  .for:hover,  .forget:hover,  .forgetting:hover,  .forgotten:hover,  .form:hover,  .forms:hover,  .from:hover,  .glowing:hover,  .good:hover,  .got:hover,  .greeks:hover,  .had:hover,  .has:hover,  .have:hover,  .he:hover,  .head:hover,  .help:hover,  .hieroglyphics:hover,  .his:hover,  .history:hover,  .hold:hover,  .hope:hover,  .hopefully:hover,  .how:hover,  .human:hover,  .humans:hover,  .i:hover,  .identified:hover,  .if:hover,  .immobile:hover,  .in:hover,  .increasingly:hover,  .indeed:hover,  .inspired:hover,  .intended:hover,  .internal:hover,  .internalized:hover,  .into:hover,  .is:hover,  .it:hover,  .its:hover,  .itself:hover,  .job:hover,  .jumped:hover,  .just:hover,  .kind:hover,  .know:hover,  .language:hover,  .later:hover,  .letter:hover,  .letters:hover,  .level:hover,  .life:hover,  .like:hover,  .link:hover,  .literacy:hover,  .lived:hover,  .living:hover,  .long:hover,  .longer:hover,  .lost:hover,  .made:hover,  .many:hover,  .marks:hover,  .may:hover,  .me:hover,  .meaning:hover,  .measure:hover,  .minds:hover,  .modern:hover,  .moment:hover,  .monkey:hover,  .most:hover,  .much:hover,  .my:hover,  .myself:hover,  .naturally-occurring:hover,  .nature:hover,  .necessities:hover,  .new:hover,  .no:hover,  .not:hover,  .nothing:hover,  .notion:hover,  .now:hover,  .o:hover,  .obsessively:hover,  .of:hover,  .on:hover,  .once:hover,  .one:hover,  .only:hover,  .opens:hover,  .or:hover,  .original:hover,  .other:hover,  .our:hover,  .out:hover,  .over:hover,  .own:hover,  .oxs:hover,  .paper:hover,  .people:hover,  .perhaps:hover,  .physical:hover,  .pointless:hover,  .progress:hover,  .promoted:hover,  .purpose:hover,  .q:hover,  .question:hover,  .reach:hover,  .read:hover,  .reading:hover,  .real:hover,  .reality:hover,  .reasons:hover,  .represented:hover,  .rest:hover,  .right:hover,  .rootedness:hover,  .running:hover,  .same:hover,  .saw:hover,  .scope:hover,  .screen:hover,  .see:hover,  .seemed:hover,  .seems:hover,  .semites:hover,  .semitic:hover,  .sensuous:hover,  .series:hover,  .shape:hover,  .shared:hover,  .should:hover,  .signified:hover,  .signifier:hover,  .signifying:hover,  .so:hover,  .some:hover,  .sometimes:hover,  .speak:hover,  .spell:hover,  .spoken:hover,  .staring:hover,  .still:hover,  .struggle:hover,  .symbols:hover,  .tail:hover,  .taken:hover,  .term:hover,  .terms:hover,  .that:hover,  .the:hover,  .their:hover,  .them:hover,  .themselves:hover,  .then:hover,  .there:hover,  .these:hover,  .they:hover,  .thing:hover,  .things:hover,  .think:hover,  .this:hover,  .through:hover,  .throughout:hover,  .tied:hover,  .time:hover,  .to:hover,  .trained:hover,  .turned:hover,  .twenty-two:hover,  .understand:hover,  .understood:hover,  .unlike:hover,  .unquestionable:hover,  .up:hover,  .use:hover,  .using:hover,  .via:hover,  .visually:hover,  .wars:hover,  .was:hover,  .we:hover,  .weirdly:hover,  .were:hover,  .what:hover,  .when:hover,  .which:hover,  .why:hover,  .will:hover,  .with:hover,  .word:hover,  .words:hover,  .work:hover,  .world:hover,  .would:hover,  .write:hover,  .writer:hover,  .writers:hover,  .writes:hover,  .writing:hover,  .written:hover,  .wrote:hover,  .years:hover,  .you:hover,  .your:hover,  .yours:hover {
+	font-style: italic;
+	font-weight: 400;
+}

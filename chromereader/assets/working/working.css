@@ -1,0 +1,419 @@
+.a, .
+ability, .
+able, .
+about, .
+abram, .
+abstract, .
+abstracted, .
+abstraction, .
+abstracts, .
+absurd, .
+across, .
+actual, .
+advent, .
+age, .
+agree, .
+agreement, .
+aleph-beth, .
+alphabet, .
+already, .
+also, .
+am, .
+an, .
+and, .
+anyone, .
+are, .
+around, .
+as, .
+at, .
+
+back, .
+baffling, .
+barely, .
+based, .
+basic, .
+be, .
+became, .
+because, .
+become, .
+been, .
+before, .
+being, .
+best-known, .
+best, .
+between, .
+bleed, .
+blocks, .
+book, .
+boundary, .
+building, .
+but, .
+by, .
+
+call, .
+can, .
+causes, .
+change, .
+characters, .
+circle, .
+claims, .
+clear, .
+code, .
+combination, .
+complexity, .
+conceptual, .
+confuse, .
+confusion, .
+consonant, .
+control, .
+convey, .
+conveyed, .
+conveys, .
+could, .
+cultural, .
+culture, .
+
+dangerous, .
+david, .
+deal, .
+deals, .
+define, .
+defines, .
+depth, .
+directly, .
+distance, .
+distilled, .
+do, .
+does, .
+doing, .
+dont, .
+down, .
+
+each, .
+ecologist, .
+egyptian, .
+embodied, .
+end, .
+especially, .
+essence, .
+every, .
+example, .
+experience, .
+explains, .
+extend, .
+eye, .
+eyes, .
+
+few, .
+finally, .
+finishing, .
+for, .
+forget, .
+forgetting, .
+forgotten, .
+form, .
+forms, .
+from, .
+
+glowing, .
+good, .
+got, .
+greeks, .
+
+had, .
+has, .
+have, .
+he, .
+head, .
+help, .
+hieroglyphics, .
+his, .
+history, .
+hold, .
+hope, .
+hopefully, .
+how, .
+human, .
+humans, .
+
+i, .
+identified, .
+if, .
+immobile, .
+in, .
+increasingly, .
+indeed, .
+inspired, .
+intended, .
+internal, .
+internalized, .
+into, .
+is, .
+it, .
+its, .
+itself, .
+
+job, .
+jumped, .
+just, .
+
+kind, .
+know, .
+
+language, .
+later, .
+letter, .
+letters, .
+level, .
+life, .
+like, .
+link, .
+literacy, .
+lived, .
+living, .
+long, .
+longer, .
+lost, .
+
+made, .
+many, .
+marks, .
+may, .
+me, .
+meaning, .
+measure, .
+minds, .
+modern, .
+moment, .
+monkey, .
+most, .
+much, .
+my, .
+myself, .
+
+naturally-occurring, .
+nature, .
+necessities, .
+new, .
+no, .
+not, .
+nothing, .
+notion, .
+now, .
+
+o, .
+obsessively, .
+of, .
+on, .
+once, .
+one, .
+only, .
+opens, .
+or, .
+original, .
+other, .
+our, .
+out, .
+over, .
+own, .
+oxs, .
+
+paper, .
+people, .
+perhaps, .
+physical, .
+pointless, .
+progress, .
+promoted, .
+purpose, .
+
+q, .
+question, .
+
+reach, .
+read, .
+reading, .
+real, .
+reality, .
+reasons, .
+represented, .
+rest, .
+right, .
+rootedness, .
+running, .
+
+same, .
+saw, .
+scope, .
+screen, .
+see, .
+seemed, .
+seems, .
+semites, .
+semitic, .
+sensuous, .
+series, .
+shape, .
+shared, .
+should, .
+signified, .
+signifier, .
+signifying, .
+so, .
+some, .
+sometimes, .
+speak, .
+spell, .
+spoken, .
+staring, .
+still, .
+struggle, .
+symbols, .
+
+tail, .
+taken, .
+term, .
+terms, .
+that, .
+the, .
+their, .
+them, .
+themselves, .
+then, .
+there, .
+these, .
+they, .
+thing, .
+things, .
+think, .
+this, .
+through, .
+throughout, .
+tied, .
+time, .
+to, .
+trained, .
+turned, .
+twenty-two, .
+
+understand, .
+understood, .
+unlike, .
+unquestionable, .
+up, .
+use, .
+using, .
+
+via, .
+visually, .
+
+wars, .
+was, .
+we, .
+weirdly, .
+were, .
+what, .
+when, .
+which, .
+why, .
+will, .
+with, .
+word, .
+words, .
+work, .
+world, .
+would, .
+write, .
+writer, .
+writers, .
+writes, .
+writing, .
+written, .
+wrote, .
+
+years, .
+you, .
+your, .
+yours, .
+
+
+
+{  
+    background-color: violet; /*A*/
+    background-color: tomato; /*B*/
+    background-color: lightsteelblue; /*C*/
+    background-color: lightsalmon; /*D*/
+    background-color: cornsilk ; /*E*/
+    background-color: cornflowerblue; /*F*/
+    background-color: thistle ; /*G*/
+    background-color: yellow; /*H*/
+    background-color: yellowgreen; /*I*/
+    background-color: orange; /*J*/
+    background-color: orangered; /*K*/
+    background-color: orchid; /*L*/
+    background-color: slategray; /*M*/
+    background-color: olivedrab; /*N*/
+    background-color: lightcyan; /*O*/
+    background-color: lightskyblue; /*P*/
+    background-color: seagreen; /*Q*/
+    background-color: steelblue; /*R*/
+    background-color: purple; /*S*/
+    background-color: royalblue; /*T*/
+    background-color: mediumpurple; /*U*/
+    background-color: lightpink; /*V*/
+    background-color: sienna; /*W*/
+    background-color: darkorange; /*Y*/
+}
+
+{   background-color: seagreen;
+    background-color: purple;
+    background-color: lightpink;
+    background-color: steelblue;
+    background-color: darkorange;
+    background-color: sienna;
+    background-color: yellowgreen;
+    background-color: tan;
+    background-color: violet;
+    background-color: tomato;
+    background-color: lightsteelblue;
+    background-color: rgb(252, 225, 68);
+    background-color: cornflowerblue;
+    background-color: thistle ;
+    background-color: orange;
+    background-color: orangered;
+    background-color: orchid;
+    background-color: oldlace;
+    background-color: olivedrab;
+    background-color: lightcyan;
+    background-color: cornsilk ;
+    background-color: lightskyblue;
+    background-color: royalblue;
+    background-color: mediumpurple;
+    background-color: coral;
+}
+
+
+a 
+b 
+c 
+d 
+e 
+f 
+g 
+h 
+i 
+j 
+k 
+l 
+m 
+n 
+o 
+p 
+q 
+r 
+s 
+t 
+u 
+v 
+w 
+y 
