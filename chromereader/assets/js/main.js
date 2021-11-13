@@ -62,7 +62,7 @@ $(function() { $('.barely').hover(function() { $('.barelyC').css('background-col
 
 $(function() { $('.based').hover(function() { $('.basedC').css('background-color', 'tomato'); }, function() { $('.basedC').css('background-color', ''); }); });
 
-$(function() { $('.basic').hover(function() { $('.basedC').css('background-color', 'tomato'); }, function() { $('.basedC').css('background-color', ''); }); });
+$(function() { $('.basic').hover(function() { $('.basicC').css('background-color', 'tomato'); }, function() { $('.basicC').css('background-color', ''); }); });
 
 $(function() { $('.be').hover(function() { $('.beC').css('background-color', 'tomato'); }, function() { $('.beC').css('background-color', ''); }); });
 
@@ -164,7 +164,7 @@ $(function() { $('.distilled').hover(function() { $('.distilledC').css('backgrou
 
 $(function() { $('.do').hover(function() { $('.doC').css('background-color', 'lightsalmon'); }, function() { $('.doC').css('background-color', ''); }); });
 
-$(function() { $('.does').hover(function() { $('.doC').css('background-color', 'lightsalmon'); }, function() { $('.doC').css('background-color', ''); }); });
+$(function() { $('.does').hover(function() { $('.doesC').css('background-color', 'lightsalmon'); }, function() { $('.doesC').css('background-color', ''); }); });
 
 $(function() { $('.doing').hover(function() { $('.doingC').css('background-color', 'lightsalmon'); }, function() { $('.doingC').css('background-color', ''); }); });
 
@@ -295,8 +295,6 @@ $(function() { $('.job').hover(function() { $('.jobC').css('background-color', '
 $(function() { $('.jumped').hover(function() { $('.jumpedC').css('background-color', 'orange'); }, function() { $('.jumpedC').css('background-color', ''); }); });
 
 $(function() { $('.just').hover(function() { $('.justC').css('background-color', 'orange'); }, function() { $('.justC').css('background-color', ''); }); });
-
-$(function() { $('.kind').hover(function() { $('.kindC').css('background-color', 'orangered'); }, function() { $('.kindC').css('background-color', ''); }); });
 
 $(function() { $('.know').hover(function() { $('.knowC').css('background-color', 'orangered'); }, function() { $('.knowC').css('background-color', ''); }); });
 
