@@ -235,6 +235,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     $(".cover.b1").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").removeClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -265,6 +266,7 @@ $(document).ready(function () {
     });  
 
     $(".cover.b2").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").removeClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -295,6 +297,7 @@ $(document).ready(function () {
     }); 
 
     $(".cover.b3").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").removeClass("hidden");
@@ -324,6 +327,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b4").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -353,6 +357,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b5").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -382,6 +387,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b6").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -411,6 +417,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b7").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -440,6 +447,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b8").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -469,6 +477,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".video.b9").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -498,6 +507,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b10").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -527,6 +537,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".video.b11").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -556,6 +567,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b12").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -586,6 +598,7 @@ $(document).ready(function () {
     }); 
 
     $(".cover.b13").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -615,6 +628,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b14").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -644,6 +658,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b15").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -673,6 +688,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b16").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -702,6 +718,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b17").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -731,6 +748,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".video-s.b18").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -760,6 +778,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b19").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -789,6 +808,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
         $(".cover.b20").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -818,6 +838,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b21").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -847,6 +868,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b22").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -876,6 +898,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b23").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -905,6 +928,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b24").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -934,6 +958,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".video-s.b25").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -963,6 +988,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".cover.b26").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
@@ -992,6 +1018,7 @@ $(document).ready(function () {
         $(".book-wrap.b27").addClass("hidden");
     }); 
     $(".video-s.b27").click(function () {
+        $(".library-right").scrollTop(0);
         $(".book-wrap.b1").addClass("hidden");
         $(".book-wrap.b2").addClass("hidden");
         $(".book-wrap.b3").addClass("hidden");
